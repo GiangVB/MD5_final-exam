@@ -1,21 +1,14 @@
 <h1>Book Info</h1>
-<form [formGroup]="bookForm">
-  <table>
-    <tr>
-      <td>Title</td>
-      <td><input type="text" formControlName="title"></td>
-    </tr>
-    <tr>
-      <td>Author</td>
-      <td><input type="text" formControlName="author"></td>
-    </tr>
-    <tr>
-      <td>Description</td>
-      <td><textarea type="text" formControlName="description"></textarea></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><a routerLink="/book/list" class="btn btn-outline-danger">Cancel</a></td>
-    </tr>
-  </table>
-</form>
+<div class="mb-3">
+  <p><span style="font-weight: bold">Tên Sách:</span> {{book.title}}</p>
+  <hr>
+</div>
+<div class="mb-3">
+  <p><span style="font-weight: bold">Tác Giả:</span> {{book.author}}</p>
+  <hr>
+</div>
+<div class="mb-3">
+  <p><span style="font-weight: bold">Mô Tả:</span> {{book.description}}</p>
+  <hr>
+</div>
+</div>
