@@ -11,3 +11,12 @@
   <p><span style="font-weight: bold">Description:</span> {{book.description}}</p>
   <hr>
 </div>
+<div>
+  <table>
+    <tr>
+      <a [routerLink]="['/book/edit',book.id]" class="btn btn-primary">Edit</a>&nbsp;
+      <a [routerLink]="['/book/delete',book.id]" class="btn btn-danger">Delete</a>&nbsp;
+      <a routerLink="/book/list" class="btn btn-outline-danger">Back</a>
+    </tr>
+  </table>
+</div>
